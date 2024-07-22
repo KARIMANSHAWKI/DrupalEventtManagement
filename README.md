@@ -22,7 +22,7 @@ docker exec -it container_name bash
 
 ## Install Project Dependencies
 
-1- access php container 
+1- Access php container 
 
 ```bash
 docker exec -it container_name bash
@@ -50,7 +50,7 @@ composer install
 ```bash
 docker exec -it php-container bash
 ```
-2- run enable custom module command
+2- Run enable custom module command
 
 ```bash
  ./vendor/bin/drush en events_management
