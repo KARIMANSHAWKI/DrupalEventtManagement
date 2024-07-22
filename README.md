@@ -25,9 +25,9 @@ docker exec -it container_name bash
 
  From UI:
  
-1- Go to Manage → Extend or navigate directly to /admin/modules.
-2- Filter existing modules with Events Management.
-3- Click install.
+1- Go to Manage → Extend or navigate directly to /admin/modules. <br>
+2- Filter existing modules with Events Management.<br>
+3- Click install.<br>
 
  From Cmmand line:
  
