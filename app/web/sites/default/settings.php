@@ -891,12 +891,12 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'drupal-db',
-  'username' => 'root',
-  'password' => 'password',
+  'database' => 'drupaldb', // Change this to your actual database name
+  'username' => 'root', // Change this to your actual database username
+  'password' => 'password', // Change this to your actual database password
   'prefix' => '',
-  'host' => 'db',
-  'port' => '3306', // Use the internal port for MySQL/MariaDB
+  'host' => 'db', // The name of your database service in Docker
+  'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );

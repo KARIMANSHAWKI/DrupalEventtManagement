@@ -1,14 +1,15 @@
 version: "3.9"
 services:
     nginx:
-      build: services/nginx/
+      build: env/nginx/
       container_name: nginx-container
       ports:
        - "8080:80"
       volumes:
          - ./app/:/var/www/html/
     php:
-      build: services/php/
+      build: env/php/
+      container_name: php-container
       expose:
        - 9000
       volumes:
