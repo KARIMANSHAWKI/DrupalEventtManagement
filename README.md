@@ -20,6 +20,20 @@ to access php container
 docker exec -it container_name bash
 ```
 
+## Install Project Dependencies
+
+1- access php container 
+
+```bash
+docker exec -it container_name bash
+```
+
+1- Install composer dependencies 
+
+```bash
+composer install
+```
+
 
 ## Installation of Event Management Module
 
