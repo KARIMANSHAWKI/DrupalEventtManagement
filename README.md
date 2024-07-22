@@ -41,3 +41,10 @@ docker exec -it php-container bash
 ```bash
  ./vendor/bin/drush en events_management
 ```
+
+After Install events management module you can navigate directly to /events 
+
+## Update Event Management Module Config
+
+ Navigate directly to /admin/config/event-api. <br>
+
