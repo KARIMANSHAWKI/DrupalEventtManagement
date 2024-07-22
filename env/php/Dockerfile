@@ -1,5 +1,8 @@
 FROM php:8.1-fpm
 
+RUN chown -R www-data:www-data /var/www/html \
+    && chmod -R 777 /var/www/html
+
 # Install dependencies and extensions
 RUN docker-php-ext-install mysqli
 
@@ -37,7 +40,6 @@ RUN docker-php-ext-install pdo && \
 RUN    docker-php-ext-install pdo_sqlite && \
     docker-php-ext-install mysqli
 RUN    docker-php-ext-install curl
-#    docker-php-ext-install tokenizer
 
 RUN    docker-php-ext-install zip && \
     docker-php-ext-install -j$(nproc) intl && \
@@ -52,3 +54,6 @@ libpng-dev && \
     rm -rf /var/lib/apt/lists/* && \
     docker-php-ext-configure gd --enable-gd --with-freetype --with-jpeg && \
     docker-php-ext-install gd
+
+
+
